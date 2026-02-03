@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="260" viewBox="0 0 520 260" role="img" aria-labelledby="title desc">
+  <title id="title">Utah Valley University</title>
+  <desc id="desc">Minimal Utah Valley University wordmark in UVU green and gray.</desc>
+  <rect width="520" height="260" fill="#ffffff" rx="24" />
+  <g transform="translate(40 70)">
+    <text x="0" y="60" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#275D38">UVU</text>
+    <text x="0" y="120" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="500" fill="#6F7376">Utah Valley University</text>
+    <rect x="0" y="140" width="440" height="6" fill="#275D38" rx="3" />
+  </g>
+</svg>

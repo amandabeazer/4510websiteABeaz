@@ -6,11 +6,13 @@
     <title>Amanda Beazer | Professional Portfolio</title>
     <style>
         :root {
-            --bg: #fafafa;
-            --text: #333;
-            --accent: #555;
+            --bg: #f7f8f6;
+            --text: #1f2a24;
+            --accent: #6f7376;
             --card-bg: #ffffff;
-            --border: #ddd;
+            --border: #d7dcd6;
+            --uvu-green: #275d38;
+            --uvu-green-dark: #1f4b2f;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -29,23 +31,20 @@
             text-align: center;
             margin-bottom: 60px;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 3px solid #eee;
+        .uvu-logo {
+            width: min(380px, 90%);
+            margin: 0 auto 24px;
+            display: block;
         }
-        h1 { font-weight: 300; font-size: 2.5rem; margin-bottom: 10px; }
+        h1 { font-weight: 400; font-size: 2.5rem; margin-bottom: 10px; color: var(--uvu-green-dark); }
         .subtitle { color: var(--accent); font-size: 1.1rem; }
         
         section { margin-bottom: 50px; }
-        h2 { border-bottom: 1px solid var(--border); padding-bottom: 10px; font-weight: 400; color: #222; }
+        h2 { border-bottom: 1px solid var(--border); padding-bottom: 10px; font-weight: 500; color: var(--uvu-green); }
         
         .card {
             background: var(--card-bg);
-            border: 1px solid #eee;
+            border: 1px solid var(--border);
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -57,13 +56,13 @@
         .date { color: var(--accent); font-size: 0.9rem; margin-bottom: 10px; display: block; }
         
         .contact-links a {
-            color: var(--text);
+            color: var(--uvu-green-dark);
             text-decoration: none;
             margin-right: 20px;
             font-weight: 500;
             border-bottom: 1px solid transparent;
         }
-        .contact-links a:hover { border-bottom: 1px solid var(--text); }
+        .contact-links a:hover { border-bottom: 1px solid var(--uvu-green-dark); }
         
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
@@ -73,31 +72,26 @@
 
 <div class="container">
     <header>
-        <img src="download.png" alt="Amanda Beazer" class="profile-pic">
+        <img src="uvu-mark.svg" alt="Utah Valley University" class="uvu-logo">
         <h1>Amanda Beazer</h1>
-        <p class="subtitle">Master of Accountancy Candidate | Data Analytics Enthusiast</p>
+        <p class="subtitle">Bachelor of Accounting Student | Data Analytics Enthusiast</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a graduate student currently focused on the intersection of accounting and data analytics. I enjoy transforming raw financial and survey data into meaningful insights that drive program improvements and audit efficiency.</p>
+        <p>I am a Bachelor of Accounting student at Utah Valley University with a focus on the intersection of accounting and data analytics. I enjoy transforming financial and survey data into insights that support stronger reporting and audit efficiency.</p>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <div class="card">
-            <h3>Master of Accountancy (MAcc)</h3>
+            <h3>Bachelor of Accounting</h3>
             <span class="date">In Progress — Expected Graduation: [Year]</span>
-            <p>[University Name]</p>
+            <p>Utah Valley University</p>
             <ul>
-                <li>Specialization in [e.g., Audit or Tax]</li>
-                <li>Relevant Coursework: Data Analytics for Accountants, Advanced Financial Reporting</li>
+                <li>Relevant Coursework: Financial Reporting, Audit & Assurance, Accounting Information Systems</li>
+                <li>Focus: Data analytics and process improvement in accounting</li>
             </ul>
-        </div>
-        <div class="card">
-            <h3>Bachelor of Science in [Major]</h3>
-            <span class="date">[Graduation Year]</span>
-            <p>[University Name]</p>
         </div>
     </section>
 
