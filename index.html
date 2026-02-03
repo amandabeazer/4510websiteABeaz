@@ -10,6 +10,7 @@
             --text: #333;
             --accent: #555;
             --card-bg: #ffffff;
+            --border: #ddd;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -28,7 +29,6 @@
             text-align: center;
             margin-bottom: 60px;
         }
-        /* Style for your uploaded photo */
         .profile-pic {
             width: 150px;
             height: 150px;
@@ -41,9 +41,9 @@
         .subtitle { color: var(--accent); font-size: 1.1rem; }
         
         section { margin-bottom: 50px; }
-        h2 { border-bottom: 1px solid #ddd; padding-bottom: 10px; font-weight: 400; }
+        h2 { border-bottom: 1px solid var(--border); padding-bottom: 10px; font-weight: 400; color: #222; }
         
-        .project-card, .job-card {
+        .card {
             background: var(--card-bg);
             border: 1px solid #eee;
             padding: 20px;
@@ -51,7 +51,10 @@
             margin-bottom: 20px;
             transition: transform 0.2s;
         }
-        .project-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        
+        .card h3 { margin-top: 0; margin-bottom: 5px; font-weight: 500; }
+        .date { color: var(--accent); font-size: 0.9rem; margin-bottom: 10px; display: block; }
         
         .contact-links a {
             color: var(--text);
@@ -77,30 +80,36 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a MAcc student specializing in data-driven financial analysis. My expertise lies in synthesizing complex datasets to provide actionable insights, particularly in academic and audit environments.</p>
+        <p>I am a graduate student currently focused on the intersection of accounting and data analytics. I enjoy transforming raw financial and survey data into meaningful insights that drive program improvements and audit efficiency.</p>
     </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="job-card">
-            <h3>[Job Title] | [Company Name]</h3>
-            <p><em>[Dates of Employment]</em></p>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Master of Accountancy (MAcc)</h3>
+            <span class="date">In Progress — Expected Graduation: [Year]</span>
+            <p>[University Name]</p>
             <ul>
-                <li>Detail your primary responsibilities and achievements here.</li>
-                <li>Focus on quantitative results and software used.</li>
+                <li>Specialization in [e.g., Audit or Tax]</li>
+                <li>Relevant Coursework: Data Analytics for Accountants, Advanced Financial Reporting</li>
             </ul>
+        </div>
+        <div class="card">
+            <h3>Bachelor of Science in [Major]</h3>
+            <span class="date">[Graduation Year]</span>
+            <p>[University Name]</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Recent Projects</h2>
-        <div class="project-card">
-            <h3>MAcc Exit Survey Data Analysis (2023-2024)</h3>
-            <p>Analyzed and compared two years of Master of Accounting student survey data to identify trends in student satisfaction and program effectiveness.</p>
+        <h2>Key Projects</h2>
+        <div class="card">
+            <h3>MAcc Exit Survey Analysis (2023–2024)</h3>
+            <p>Conducted a comprehensive analysis comparing two years of student exit survey data to identify trends and provide feedback for program enhancement.</p>
         </div>
-        <div class="project-card">
-            <h3>Fraud Detection & Journal Entry Analysis</h3>
-            <p>Utilized VBA macros and Benford's Law analysis to identify high-risk journal entries and potential fraudulent activity in large datasets.</p>
+        <div class="card">
+            <h3>Automated Audit & Fraud Detection</h3>
+            <p>Developed VBA macros designed to identify high-risk journal entries and perform Benford’s Law analysis to detect statistical anomalies in financial datasets.</p>
         </div>
     </section>
 
